@@ -1,0 +1,417 @@
+/* index.html */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  margin: 25px 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 70vh;
+}
+
+nav {
+  font-weight: 600;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #23334B !important;
+  list-style-type: none;
+  margin: 0px 8px;
+}
+
+nav li a:hover {
+  color: #02AAAA !important;
+}
+
+nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #23334B;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #02AAAA;
+  font-weight: 600;
+}
+
+h3 {
+  color: #23334B;
+}
+
+h4 {
+  color: #02AAAA;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p {
+  color: #23334B;
+  font-weight: 400;
+}
+
+/* HERO SECTION */
+.heroSection {
+  margin: 0px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+}
+
+.heroSection img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.heroSection article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 300px;
+  width: 60%;
+}
+
+/* CARDS */
+.container1 {
+  background-color: #ededed;
+  padding: 100px;
+}
+
+.container1 {
+  padding: 100px;
+}
+
+.cardb {
+  padding: 8px;
+  margin: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 2px 3px 0px #a6a6a6;
+  box-shadow: 2px 2px 3px 0px #a6a6a6;
+  width: auto;
+  height: 200px;
+}
+
+.iconservice {
+  width: 85px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2323334B' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2323334B' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* PORTFOLIO */
+.margenTitulo {
+  margin-left: 20px;
+}
+
+/* FOOTER */
+footer {
+  grid-area: foot;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #02AAAA;
+  height: 100px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iconosRedes {
+  margin: 0px 8px;
+  width: 40px;
+}
+
+/* sobre-mi.html */
+.iconosSobreMi {
+  margin: 0px 8px;
+  width: 80px;
+}
+
+.iconosSobreMi2 {
+  margin: 0px 8px;
+  width: 500px;
+}
+
+.frase2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  text-align: center;
+  padding: 50px;
+  color: #ffffff;
+  background: #03d7d7;
+  background: -webkit-gradient(linear, left top, right top, from(#03d7d7), color-stop(35%, #02aaaa), to(#305da1));
+  background: linear-gradient(90deg, #03d7d7 0%, #02aaaa 35%, #305da1 100%);
+}
+
+/* portfolio.html */
+.tituloPortfolio {
+  text-align: center;
+  font-size: 30px;
+}
+
+.portfolioSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 150px;
+}
+
+.trabajos {
+  height: 500px;
+  padding: 0px 20px;
+}
+
+.trabajos img {
+  width: 300px;
+}
+
+.trabajos p {
+  width: 300px;
+}
+
+.frase {
+  background: #03d7d7;
+  background: -webkit-gradient(linear, left top, right top, from(#03d7d7), color-stop(35%, #02aaaa), to(#305da1));
+  background: linear-gradient(90deg, #03d7d7 0%, #02aaaa 35%, #305da1 100%);
+  color: #ffffff;
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  padding: 80px;
+  text-align: center;
+}
+
+/* experiencia.html */
+.tituloExp {
+  text-align: center;
+}
+
+.tituloPpal {
+  color: #02AAAA;
+}
+
+.contenido {
+  color: #23334b;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+  background-color: #23334B !important;
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+/* contacto.html */
+.contacto {
+  background-color: #23334B;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.sectionContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 300px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 400px;
+  padding: 3px 10px;
+  border: solid #ffffff;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #02AAAA;
+  border: none;
+  -webkit-box-shadow: 3px 3px 15px -6px black;
+          box-shadow: 3px 3px 15px -6px black;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize: none;
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+.h1contacto {
+  color: #02AAAA;
+  text-align: left;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .imagenPerfil {
+    display: none;
+  }
+  .heroSection {
+    margin: 0px;
+    width: 100%;
+    height: 120vh;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    height: 200vh;
+  }
+  .cards article {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 100vh;
+    margin: 0px;
+    width: 100%;
+  }
+  .cards {
+    margin: 0px;
+  }
+  .cards article {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  .heroSection {
+    height: 140vh;
+    margin: 0px;
+    width: 100%;
+  }
+  .cards {
+    height: 200vh;
+    margin: 0px;
+  }
+  .cards article {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
