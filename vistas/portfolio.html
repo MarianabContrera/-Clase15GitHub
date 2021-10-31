@@ -10,6 +10,7 @@
     <title>Mi Portfolio</title>
     <!--etiqueta favicon-->
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
     <!--Tipografía-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +21,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!--estilos CSS-->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Owl Carousel Assets -->
+    <link href="../css/owl.carousel.css" rel="stylesheet">
+    <link href="../css/owl.theme.css" rel="stylesheet">
+
+    <script src="../js/jquery-1.10.1.min.js"></script> 
+    <script src="../js/owl.carousel.js"></script>
+
+
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
+
+    <!-- galería portfolio -->
+		
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+		<script src="../js/modernizr.custom.js"></script>
+		<script src="../js/imagesloaded.pkgd.min.js"></script>
+		<script src="../js/masonry.pkgd.min.js"></script>
+		<script src="../js/classie.js"></script>
+		<script src="../js/cbpGridGallery.js"></script>
+
 </head>
 
 <body>
@@ -53,116 +84,220 @@
         </nav>
     </header>
 
+
     <main>
         <section class="titulo">
                 <h1>Mi Portfolio</h1>
         </section>
         <section class="portfolioSection">
 
-            <div class="container-fluid container4 p-5">
-                <div class="row d-flex justify-content-center p-5">     
-                    <div class="col-lg-4 col-md-4 col-6 p-0">
-                        <div class="box9">
-                            <img src="../imagenes/portfolio/u-link.png" alt="Trabajos u-link" class="img-fluid"/>
-                            <div class="box-content">
-                                <ul class="icon">
-                                    <li><a href="">Ver</a></li>
-                                    </button>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-4 col-6 p-0">
-                        <div class="box9">
-                            <img src="../imagenes/portfolio/madexa.png" alt="Trabajos Madexa" class="img-fluid" />
-                            <div class="box-content">
-                                <ul class="icon">
-                                    <li><a href="">Ver</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-6 p-0">
-                        <div class="box9">
-                            <img src="../imagenes/portfolio/allwit.png" alt="Trabajos Allwit" class="img-fluid" />
-                            <div class="box-content">
-                                <ul class="icon">
-                                    <li><a href="">Ver</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-6 p-0">
-                        <div class="box9">
-                            <img src="../imagenes/portfolio/espacio-circular.png" alt="Trabajos Espacio Circular" class="img-fluid" />
-                            <div class="box-content">
-                                <ul class="icon">
-                                    <li><a href="">Ver</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-6 p-0">
-                        <div class="box9">
-                            <img src="../imagenes/portfolio/pereyra.png" alt="Trabajos Pereyra Propiedades" class="img-fluid" />
-                            <div class="box-content">
-                                <ul class="icon">
-                                    <li><a href="">Ver</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-6 p-0">
-                        <div class="box9">
-                            <img src="../imagenes/portfolio/dpsit.png" alt="Trabajos DPSIT" class="img-fluid" />
-                            <div class="box-content">
-                                <ul class="icon">
-                                    <li><a href="">Ver</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div class="container">
+            <div id="grid-gallery" class="grid-gallery">
+              <section class="grid-wrap">
+                <ul class="grid">
+                  <li class="grid-sizer"></li><!-- for Masonry column width -->
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/dpsitteletrabajo.png" alt="dpsit teletrabajo flyer"/>
+                      <figcaption><h3>DPSIT</h3><p>Placas realizadas para comunicación interna del equipo.</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/nuevointegrante.png" alt="nuevo integrante"/>
+                      <figcaption><h3>U-link</h3><p>Placa interna realizada para los nuevos ingresantes al equipo</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/pereyra1.png" alt="carpeta corporativa"/>
+                      <figcaption><h3>Pereyra Prop</h3><p>Diseño de carpeta corporativa.</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/tallermolderia.png" alt="placas redes sociales"/>
+                      <figcaption><h3>Espacio Circular</h3><p>Realización de placas para redes sociales de los talleres realizados en el espacio.</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/tarjetaallwit.png" alt="tarjetas personales corporativas"/>
+                      <figcaption><h3>Allwit</h3><p>Realización de tarjetas corporativas para la marca de luminaria Allwit</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/tarjetamadexa.png" alt="tarjetas personales corporativas"/>
+                      <figcaption><h3>Madexa</h3><p>Realización de tarjetas corporativas para Madexa</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/publi-revista.png" alt="publicacion impresa para revista"/>
+                      <figcaption><h3>Madexa</h3><p>Diseño de publicación impresa para revista sobre matrices de aluminio.</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/homepage.png" alt="propuesta de homepage"/>
+                      <figcaption><h3>U-link</h3><p>Realización del diseño y Maquetación de home page de u-link.</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb" alt="diseño de sitio en construccion"/>
+                      <figcaption><h3>U-link</h3><p>Propuesta de Home page, sitio en construcción</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/redessocialespereyra.png" alt="placas para redes sociales"/>
+                      <figcaption><h3>Pereyra Prop</h3><p>Diseño de placas para redes sociales de la inmobiliaria Pereyra.</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/efemerides.png" alt="Efemerides redes sociales"/>
+                      <figcaption><h3>Espacio Circular</h3><p>Efémerides para redes sociales.</p></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="../imagenes/portfolio/thumb/evento.png" alt="placa invitacion evento subsecretaria"/>
+                      <figcaption><h3>DPSIT</h3><p>Diseño de la invitación a la presentación de la subsecretaría de Gobierno Digital</p></figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </section><!-- // grid-wrap -->
 
-        <section>
-            <p class="frase">
-                "El saber no ocupa lugar, y el diseño es una carrera en constante crecimiento."
-            </p>
-        </section>
-
-        <div class="container-fluid container2 p-5">
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../imagenes/portfolio/carousel/bykiwi.png" class="d-block w-100" alt="Logo By Kiwi">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/portfolio/carousel/carflow.png" class="d-block w-100" alt="Logo Carflow">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/portfolio/carousel/empiria.png" class="d-block w-100" alt="Logo Empiri">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/portfolio/carousel/retourbano.png" class="d-block w-100" alt="Logo Reto Urbano">
-                </div>
-                <div class="carousel-item">
-                    <img src="../imagenes/portfolio/carousel/voucher-vibrate.png" class="d-block w-100" alt="Flyer Voucher Vibrate">
-                </div>
-                </div>
-                <button class="carousel-control-prev prevNextButton" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
+              <section class="slideshow">
+                <ul>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>DPSIT</h3>
+                        <p>Placas realizadas para comunicación interna del equipo.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/dpsitteletrabajo.png" alt="dpsit teletrabajo flyer"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>U-link</h3>
+                        <p>Placa interna realizada para los nuevos ingresantes al equipo</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/nuevointegrante.png" alt="nuevo integrante"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <figure>
+                          <h3>Pereyra Prop</h3>
+                          <p>Diseño de carpeta corporativa</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/pereyra1.png" alt="carpeta corporativa"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>Espacio Circular</h3>
+                        <p>Realización de placas para redes sociales de los talleres realizados en el espacio.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/tallermolderia.png" alt="placas redes sociales"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>Allwit</h3>
+                        <p>Realización de tarjetas corporativas para la marca de luminaria Allwit.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/tarjetaallwit.png" alt="tarjetas personales corporativas"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>Madexa</h3>
+                        <p>Realización de tarjetas corporativas para Madexa.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/tarjetamadexa.png" alt="tarjetas personales corporativas"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>Madexa</h3>
+                        <p>Diseño de publicación impresa para revista sobre matrices de aluminio.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/publi-revista.png" alt="publicacion impresa para revista"/>
+                    </figure>
+                  </li>
+                  <li>          
+                    <figure>
+                      <figcaption>
+                        <h3>U-link</h3>
+                        <p>Realización del diseño y Maquetación de home page de u-link.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/homepage.png" alt="propuesta de homepage"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>U-link</h3>
+                        <p>Propuesta de Home page, sitio en construcción.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/propuestahomepage.png" alt="diseño de sitio en construccion"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>Pereyra Prop</h3>
+                        <p>Diseño de placas para redes sociales de la inmobiliaria Pereyra.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/redessocialespereyra.png" alt="placas para redes sociales"/>
+                    </figure>
+                  </li>
+                  <li>               
+                    <figure>
+                      <figcaption>
+                        <h3>Espacio Circular</h3>
+                        <p>Efémerides para redes sociales.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/efemerides.png" alt="Efemerides redes sociales"/>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <figcaption>
+                        <h3>DPSIT</h3>
+                        <p>Diseño de la invitación a la presentación de la subsecretaría de Gobierno Digital.</p>
+                      </figcaption>
+                      <img src="../imagenes/portfolio/large/evento.png" alt="placa invitacion evento subsecretaria"/>
+                    </figure>
+                  </li>
+                </ul>
+                <nav>
+                  <span class="icon nav-prev"></span>
+                  <span class="icon nav-next"></span>
+                  <span class="icon nav-close"></span>
+                </nav>
+                <div class="info-keys icon">Navigate with arrow keys</div>
+              </section><!-- // slideshow -->
+            </div><!-- // grid-gallery -->
+          </div>
+          <!-- script de la galeria que va al final -->
+          <script>
+            new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+          </script>
+      
 
     </main>
     <footer>
@@ -175,6 +310,8 @@
 
      
     <!-- Option 1: Bootstrap Bundle with Popper -->
+
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,8 +2,8 @@
 
 @for $i from 1 through 3 {
     .caja-#{$i} {
-        width: 10rem * $i;
-        height: 10rem * $i;
+        width: 7rem * $i;
+        height: 7rem * $i;
     }
     
 }
