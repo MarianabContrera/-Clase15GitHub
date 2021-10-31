@@ -453,6 +453,18 @@ p {
   width: 40%;
 }
 
+@media screen and (max-width: 768px) {
+  .tamañovideo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tamañovideo {
+    width: 100%;
+  }
+}
+
 /* contacto.html*/
 .contacto {
   background-color: #23334B;

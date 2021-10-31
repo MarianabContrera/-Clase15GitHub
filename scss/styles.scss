@@ -386,7 +386,15 @@
 
   .tamañovideo {
     width: 40%;
+
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
+
   
   /* contacto.html*/
   .contacto {
